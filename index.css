@@ -1,0 +1,10 @@
+
+.button_color button{
+    background-color: gold; 
+    color: black;         
+    padding: 20px 20px;        
+    font-size: 25px; 
+    font-weight: bold;
+    border: none;     
+}
+
