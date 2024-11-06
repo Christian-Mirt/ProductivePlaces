@@ -19,6 +19,10 @@ p{
 }
 
 /** List styling **/
+ol{
+    list-style-type: disc;
+}
+
 ul {
  list-style: none;
  margin: 0; 
