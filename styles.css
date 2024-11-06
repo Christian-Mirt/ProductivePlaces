@@ -1,0 +1,144 @@
+/** Text styling **/
+h1{
+    color: Gold; 
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+}
+
+h2{
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+
+p{
+    color: black;
+    font-size: large;
+}
+
+/** List styling **/
+ul {
+ list-style: none;
+ width: 80%;
+ margin: 0; 
+}
+
+ul li {
+  padding-left: 10px ;
+  text-indent: -38px ;
+}
+
+/** Link styling **/
+a:link{
+    color: blue;
+    text-align:center;
+}
+
+a:hover{
+    color: gold;
+}
+
+a:visited{
+    color: black;
+}
+
+
+/** Header/footer styling **/
+.header{
+    background-color: black;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+
+.footer{
+    background: radial-gradient(ellipse, white 60%, silver);
+    border: 3px solid gold;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    position: relative;
+    bottom: 0;
+    z-index: 2;
+}
+
+/** Navbar and navbar link styling **/
+.topnav{
+    list-style-type: none;
+    justify-content: center;
+    z-index: 1;
+}
+
+a.button:link, a.button:visited {
+  background-color: gold;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.button:hover, a.button:active {
+  background-color: black;
+  color: gold;
+}
+
+
+/** Body styling **/
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.center{
+    text-align: center;
+}
+
+.body-card{
+    width: 95%;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    background: radial-gradient(ellipse, white 60%, silver);
+    padding: 20px;
+    border: 3px solid gold;
+    border-radius: 8px;
+}
+
+.bio-card {
+    width: 22%;
+    justify-content: center;
+    background: radial-gradient(ellipse, white 60%, silver);
+    padding: 20px;
+    border: 3px solid gold;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.bio-card > img {
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 3px solid black;
+}
+
+.bio-row {
+    width: 100%;;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.bio-card-spacer {
+    width: 10%;
+}
