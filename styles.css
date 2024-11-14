@@ -1,133 +1,196 @@
+/** Global variables **/
+:root {
+    --gold: rgb(255, 232, 128);
+}
+
 /** Text styling **/
-h1{
-    color: Gold; 
+h1 {
+    color: black;
+    font-family: sans-serif;
     font-weight: bold;
     font-size: xx-large;
     text-align: center;
+    padding: 10px 0px;
 }
 
-h2{
+h2 {
     color: black;
     font-weight: bold;
     font-size: x-large;
     text-align: center;
+    padding: 5px 0px;
+
+
 }
 
-p{
+h3{
     color: black;
+    font-weight: bold;
+    font-size: 40pt;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    color: black;
+    font-family: sans-serif;
     font-size: large;
+    padding: 10px;
 }
 
 /** List styling **/
-ol{
+ol {
     list-style-type: disc;
 }
 
 ul {
- list-style: none;
- margin: 0; 
+    list-style-type: none;
+    justify-content: center;
 }
 
 ul li {
-  padding-left: 10px ;
-  text-indent: -38px ;
+    font-family: sans-serif;
+    padding-left: 10px;
+    text-indent: -38px;
 }
+
+
+
 
 /** Link styling **/
-a:link{
+a:link {
     color: blue;
-    text-align:center;
+    text-align: center;
+    font-weight: bold;
 }
 
-a:hover{
-    color: gold;
+a:hover {
+    color: var(--gold);
 }
 
-a:visited{
+a:visited {
     color: black;
 }
 
+.button:link,
+.button:visited {
+    background-color: var(--gold);
+    border-radius: 8px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover,
+.button:active {
+    background-color: black;
+    color: var(--gold);
+}
 
 /** Header/footer styling **/
-.header{
-    background-color: black;
+.banner{
+    background-color: white;
+    border-radius: 20px;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.header {
+    background: radial-gradient(ellipse, white 50%, silver);
     text-align: center;
+    justify-content: center;
     margin: auto;
     border-radius: 10px;
     position: sticky;
+    width: 98%;
+    padding: 5px;
     top: 0;
-    z-index: 2;
-}
-
-
-.footer{
-    background: radial-gradient(ellipse, white 60%, silver);
-    border: 3px solid gold;
-    border-radius: 15px;
-    text-align: center;
-    padding: 0;
-    margin: auto;
-    position: relative;
-    bottom: 0;
-    z-index: 2;
-}
-
-/** Navbar and navbar link styling **/
-.topnav{
-    list-style-type: none;
-    justify-content: center;
     z-index: 1;
 }
 
-a.button:link, a.button:visited {
-  background-color: gold;
-  color: black;
-  padding: 14px 25px;
-  text-align: center;
-  font-size: large;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
+.footer {
+    background: radial-gradient(ellipse, white 50%, silver);
+    border-radius: 10px;
+    text-align: center;
+    width: 98%;
+    padding: 5px;
+    margin: auto;
+    position: relative;
+    bottom: 0px;
 }
 
-a.button:hover, a.button:active {
-  background-color: black;
-  color: gold;
+/** Navbar and navbar link styling **/
+.topnav {
+    list-style-type: none;
+    justify-content: space-evenly;
 }
+
+
+/**Image styling**/
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.banner-img{
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
 
 
 /** Body styling **/
-body {
-    background-color: black;
-    font-family: sans-serif;
+.main {
+    margin-top: 10px;
 }
 
-.center{
+body {
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    justify-content: center;
+
+}
+
+.center {
     text-align: center;
 }
 
-.body-card{
-    width: 95%;
+.body-card {
+    width: 98%;
     margin: auto;
+    padding: 5px;
     position: relative;
     justify-content: center;
-    background: radial-gradient(ellipse, white 60%, silver);
-    padding: 20px;
-    border: 3px solid gold;
+    background: radial-gradient(ellipse, white 50%, silver);
     border-radius: 8px;
+    overflow: auto;
 }
 
 .bio-card {
     width: 22%;
     justify-content: center;
-    background: radial-gradient(ellipse, white 60%, silver);
+    background: radial-gradient(ellipse, white 50%, silver);
     padding: 20px;
-    border: 3px solid gold;
+    border: 3px solid var(--gold);
     border-radius: 8px;
     text-align: center;
 }
 
-.bio-card > img {
+.bio-card>img {
     height: 200px;
     width: 150px;
     object-fit: cover;
@@ -136,7 +199,7 @@ body {
 }
 
 .bio-row {
-    width: 100%;;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -145,3 +208,4 @@ body {
 .bio-card-spacer {
     width: 10%;
 }
+
