@@ -1,2 +1,2 @@
 # ProductivePlaces
-CS410 Project
+CS410 Project: A web application
