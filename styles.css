@@ -209,3 +209,9 @@ body {
     width: 10%;
 }
 
+.lab-btns {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
